@@ -1,17 +1,26 @@
-## **:gear: Configuration Manager**
-📂 **File:** `Config_Management.py`  
+## **:chart_with_upwards_trend: System Health Monitor**
+📂 **File:** `Health_Check.py`  
 📝 **Description:**  
-This script parses configuration files (.ini format), extracts key-value pairs, and stores them in JSON.
+Monitors system performance metrics, including CPU usage, memory usage, disk space, and network connectivity.    
 
 ### ✅ **Features**
-✔️ Parses .ini configuration files     
-✔️  Converts extracted data into JSON format    
-✔️ Easily stores configurations for automation
+✔️ Monitors real-time system health    
+✔️ Checks CPU, memory, and disk utilization  
+✔️  Helps prevent performance bottlenecks
 
 ### 📌 **Usage**
 ```sh
-python Config_Management.py /path/to/config.ini
+python Health_Check.py
 ```
+#### 📌 **Output**
+```sh
+Monitoring CPU usage...
+Alert! CPU usage exceeds threshold: 85%
+Alert! CPU usage exceeds threshold: 90%
+... (continues until interrupted) 
+```
+
+
 ⚠️ Prerequisites
 - Ensure both source and destination directories exist.
 - Requires Python 3.x installed, If Python is not installed, install it using:
