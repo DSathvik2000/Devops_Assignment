@@ -11,3 +11,8 @@ This script automates **file backup** by copying files from a **source directory
 ### 📌 **Usage**
 ```sh
 python Backup.py /path/to/source /path/to/destination
+```
+⚠️ Prerequisites
+Ensure both source and destination directories exist.
+Requires Python 3.x installed.
+
