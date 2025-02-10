@@ -1,16 +1,16 @@
-## **:floppy_disk: Backup Script**
-📂 **File:** `Backup.py`  
+## **:gear: Configuration Manager**
+📂 **File:** `Config_Management.py`  
 📝 **Description:**  
-This script automates **file backup** by copying files from a **source directory** to a **destination directory**. If a file already exists, it appends a **timestamp** to prevent overwriting.
+This script parses configuration files (.ini format), extracts key-value pairs, and stores them in JSON.
 
 ### ✅ **Features**
-✔️ **Ensures unique backups** without overwriting  
-✔️ **Appends timestamps** for duplicate filenames  
-✔️ **Handles missing directories gracefully**  
+✔️ Parses .ini configuration files     
+✔️  Converts extracted data into JSON format    
+✔️ Easily stores configurations for automation
 
 ### 📌 **Usage**
 ```sh
-python Backup.py /path/to/source /path/to/destination
+python Config_Management.py /path/to/config.ini
 ```
 ⚠️ Prerequisites
 - Ensure both source and destination directories exist.
