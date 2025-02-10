@@ -5,10 +5,10 @@
 ---
 
 ## **📌 Table of Contents**
-- [📂 Backup Script](#floppy_disk-backup-script)
-- [🔐 Password Strength Checker](#lock-password-strength-checker)
-- [⚙️ Configuration Manager](#gear-configuration-manager)
-- [📊 System Health Monitor](#chart_with_upwards_trend-system-health-monitor)
+- [📂 Backup Script](#floppy_disk-File_Backup_Regularly)
+- [🔐 Password Strength Checker](#lock-Password_Strength_Checker)
+- [⚙️ Configuration Manager](#gear-Config_File_Management)
+- [📊 System Health Monitor](#chart_with_upwards_trend-Health_Check_Monitor)
 - [🔧 Setup and Requirements](#hammer_and_wrench-setup-and-requirements)
 - [💻 Usage Instructions](#computer-usage-instructions)
 - [🤝 Contributing](#handshake-contributing)
