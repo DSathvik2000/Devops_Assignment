@@ -21,6 +21,16 @@ def load_config(config_file):
         return {"Error" : e}
     except configparser.Error as e:
         return {"error": f"Error reading configuration file: {str(e)}"}
+def savetomongodb(result):
+    client = MongoClient("your-connection-string-of-mongodb")
+    db = client["databasename"]
+    collection = db["collectionname"]
+    with open(r"path\to\output.json", "r", encoding="utf-8") as file:
+        data = json.load(file)  
+    if isinstance(data, list):
+        collection.insert_many(data)  
+    else:
+        collection.insert_one(data)
 
 @app.route('/config', methods=['GET'])
 def get_config():
