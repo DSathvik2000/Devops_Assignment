@@ -21,7 +21,8 @@ def load_config(config_file):
         return {"Error" : e}
     except configparser.Error as e:
         return {"error": f"Error reading configuration file: {str(e)}"}
-def savetomongodb(result):
+        
+def savetomongodb():
     client = MongoClient("your-connection-string-of-mongodb")
     db = client["databasename"]
     collection = db["collectionname"]
@@ -36,6 +37,7 @@ def savetomongodb(result):
 def get_config():
     config_file = r"path\to\read\config.ini"
     result = load_config(config_file)
+    mongodb = savetomongodb()
     if result:
         with open(r"path\to\write\config_output.json", "w") as f:
             json.dump(result, f, indent=4)
